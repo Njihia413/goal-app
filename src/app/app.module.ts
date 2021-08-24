@@ -13,6 +13,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 import { NgProgressModule } from '@ngx-progressbar/core';
 import { AboutComponent } from './about/about.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AboutComponent } from './about/about.component';
     StrikethroughDirective,
     DateCountPipe,
     GoalFormComponent,
-    AboutComponent
+    AboutComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
