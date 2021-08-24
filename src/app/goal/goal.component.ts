@@ -53,6 +53,9 @@ constructor(goalService:GoalService, alertService:AlertService, private http:Htt
     }
     this.http.get<ApiResponse>("http://quotes.stormconsultancy.co.uk/random.json").subscribe(data=>{
       this.quote = new Quote(data.author, data.quote)
+    },err=>{
+      this.quote = new Quote("Winston Churchill", "Never never give up!")
+      console.log("An error occurred")
     })
   }
 }
