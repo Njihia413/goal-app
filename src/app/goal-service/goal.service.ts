@@ -10,5 +10,13 @@ export class GoalService {
     return goals
   }
   
+  getGoal(id: number){
+    for (let goal of goals){
+      if (goal.id == id){
+        return goal;
+      }
+    }
+    return;
+  }
   constructor() { }
 }
